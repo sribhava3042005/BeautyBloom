@@ -17,7 +17,7 @@ function Products({
 
   useEffect(() => {
     axios
-      .get("https://beautybloom.onrender.com")
+      .get("https://beautybloom.onrender.com/api/products")
       .then((res) => setProducts(res.data))
       .catch((err) => console.log(err));
   }, []);
